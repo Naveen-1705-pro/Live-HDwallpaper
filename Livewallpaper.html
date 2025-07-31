@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiveScape - HD Live Wallpapers</title>
+    <meta name="description" content="Transform your desktop with stunning 4K live wallpapers">
+    <link rel="stylesheet" href="wallpaperstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <span class="logo-text">LiveScape</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="#home" class="nav-link">🏠 Home</a>
+                    <a href="#daily" class="nav-link">🔄 Daily Updates</a>
+                    <a href="#categories" class="nav-link">💡 Categories</a>
+                    <a href="#downloads" class="nav-link">📥 Downloaded</a>
+                    <a href="#profile" class="nav-link">🌌 Your Space</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="header-actions">
+                    <div class="search-container">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" placeholder="Search wallpapers..." class="search-input">
+                    </div>
+                    <button class="btn btn-outline btn-sm language-btn">
+                        <i class="fas fa-globe"></i> EN
+                    </button>
+                    <button class="btn btn-outline btn-sm download-btn">
+                        <i class="fas fa-download"></i>
+                    </button>
+                    <button class="btn btn-outline btn-sm mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="mobile-search">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" placeholder="Search wallpapers..." class="search-input">
+                </div>
+                <div class="mobile-nav">
+                    <a href="#home" class="mobile-nav-link">🏠 Home</a>
+                    <a href="#daily" class="mobile-nav-link">🔄 Daily Updates</a>
+                    <a href="#categories" class="mobile-nav-link">💡 Categories</a>
+                    <a href="#downloads" class="mobile-nav-link">📥 Downloaded</a>
+                    <a href="#profile" class="mobile-nav-link">🌌 Your Space</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <img src="https://i.pinimg.com/736x/62/0d/1e/620d1e45864bec4a2bf0a79dd001696d.jpg" alt="Cosmic Background" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="pulse-dot"></span>
+                    <span>New wallpapers added daily</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="gradient-text">Live HD</span><br>
+                    <span>Wallpapers</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Transform your desktop with stunning 4K live wallpapers. 
+                    Discover cosmic landscapes, abstract art, and dynamic visuals.
+                </p>
+                
+                <div class="hero-actions">
+                    <button class="btn btn-cosmic btn-lg">
+                        <i class="fas fa-play"></i> Preview Live
+                    </button>
+                    <button class="btn btn-outline btn-lg">
+                        <i class="fas fa-download"></i> Download HD
+                    </button>
+                    <button class="btn btn-outline btn-lg">
+                        <i class="fas fa-random"></i> Surprise Me
+                    </button>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat floating-1">
+                        <div class="stat-number">10,000+</div>
+                        <div class="stat-label">HD Wallpapers</div>
+                    </div>
+                    <div class="stat floating-2">
+                        <div class="stat-number">4K</div>
+                        <div class="stat-label">Ultra Quality</div>
+                    </div>
+                    <div class="stat floating-3">
+                        <div class="stat-number">Daily</div>
+                        <div class="stat-label">New Updates</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="floating-heart">
+            <button class="btn btn-round btn-glow">
+                <i class="fas fa-heart"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Explore <span class="gradient-text">Categories</span>
+                </h2>
+                <p class="section-subtitle">
+                    Discover thousands of stunning live wallpapers across different themes and styles
+                </p>
+            </div>
+            
+            <div class="categories-grid" id="categoriesGrid">
+                <!-- Categories will be populated by JavaScript -->
+            </div>
+            
+            <div class="section-footer">
+                <button class="btn btn-outline btn-lg">
+                    View All Categories <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wallpaper Gallery -->
+    <section class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Featured <span class="gradient-text">Wallpapers</span>
+                </h2>
+                <p class="section-subtitle">
+                    Hand-picked collection of the most stunning live wallpapers
+                </p>
+            </div>
+            
+            <div class="gallery-filters" id="galleryFilters">
+                <!-- Filters will be populated by JavaScript -->
+            </div>
+            
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Wallpapers will be populated by JavaScript -->
+            </div>
+            
+            <div class="section-footer">
+                <button class="btn btn-outline btn-lg">
+                    Load More Wallpapers
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand -->
+                <div class="footer-section">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <span class="logo-text">LiveScape</span>
+                    </div>
+                    <p class="footer-description">
+                        Transform your desktop with stunning 4K live wallpapers. New content added daily.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://x.com/NaveenSola17105?t=9EgdTtKc6v59Ls-BM5mvGw&s=09" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/self_loop_naveen?igsh=MXJ6cmM0bnJnYzI0bA==" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/Naveen-1705-pro" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Categories -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Abstract Art</a></li>
+                        <li><a href="#">Nature</a></li>
+                        <li><a href="#">Sci-Fi & Cyberpunk</a></li>
+                        <li><a href="#">Minimal</a></li>
+                        <li><a href="#">Anime</a></li>
+                        <li><a href="#">Gaming</a></li>
+                        <li><a href="#">Arm Force</a></li>
+                        <li><a href="#">Cars</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Resources -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Daily Updates</a></li>
+                        <li><a href="#">Download App</a></li>
+                        <li><a href="#">API Access</a></li>
+                        <li><a href="#">Creator Tools</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Newsletter -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Stay Updated</h3>
+                    <p class="footer-description">
+                        Get notified about new wallpapers and features.
+                    </p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Enter your email" class="newsletter-input">
+                        <button class="btn btn-stellar"><i class="fas fa-envelope"></i></button>
+                    </div>
+                    <p class="newsletter-note">No spam. Unsubscribe anytime.</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 LiveScape. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+                <div class="footer-love">
+                    Made with <i class="fas fa-heart"></i> for wallpaper lovers
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="wallpaperscript.js"></script>
+</body>
+</html>
